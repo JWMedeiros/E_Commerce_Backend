@@ -45,6 +45,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+
   Category.update(
     {
       // All the fields you can update and the data attached to the request body.

@@ -1,13 +1,13 @@
 const { ProductTag, sequelize, DataTypes } = require('../models');
 
 describe('ProductTag model', () => {
-    beforeAll(async () => {
-        await ProductTag.sync(); // Use ProductTag.sync() instead of sequelize.sync()
-    });
+  beforeAll(async () => {
+    await ProductTag.sync(); // Use ProductTag.sync() instead of sequelize.sync()
+  });
 
-    test('should have modelName set to "product_tag"', () => {
-        expect(ProductTag.name).toBe('product_tag'); // Check the name property instead of modelName
-      });
+  test('should have modelName set to "product_tag"', () => {
+    expect(ProductTag.name).toBe('product_tag'); // Check the name property instead of modelName
+  });
 
   test('should have correct data types for each property', () => {
     const properties = ProductTag.rawAttributes;
